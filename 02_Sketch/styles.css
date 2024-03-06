@@ -1,0 +1,39 @@
+:root {
+    --border-weight: 1px;
+    --grid-size: 800px;
+  }
+
+body {
+    height: 100vh;
+    width: 100vh;
+}
+
+section {
+    height: var(--grid-size);
+    width: 800px;
+}
+
+.grid {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-row {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.grid-item {
+    background-color: #eeeeee;
+    height: calc(100% - 2 * var(--border-weight));
+    width: calc(100% - 2 * var(--border-weight));
+    border: var(--border-weight) solid #aaaaaa;
+}
+
+/* .grid-item:hover {
+    background-color: #cccccc;
+} */
